@@ -27,4 +27,8 @@ class PageController extends Controller
         $articles = $user->articles()->orderBy('date', 'DESC')->get();
         return view('author_article', compact('articles', 'user'));
     }
+    public function showData()
+    {
+        return "Data";
+    }
 }
